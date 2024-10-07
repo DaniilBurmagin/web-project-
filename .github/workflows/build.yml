@@ -13,4 +13,4 @@ jobs:
       - name: setup docker
         uses: docker/setup-buildx-action@v3
       - name: build docker image
-        run: docker build . --file Dockerfile --tag web:${{githab.sha}} --tag web:dev
+        run: docker build . --file Dockerfile --tag web:${{github.sha}} --tag web:dev
